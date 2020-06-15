@@ -4,8 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지 만들기</title>
+
+    <!-- 외부 리소스를 들고 올 때 link -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <style></style>
 </head>
 <body>
-    
+    <div id="wrap">
+        <!-- 상단 및 메뉴 -->
+        <header class="header cfixed">
+            <h1 class="logo">
+                <a href="#">INDIGO</a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WE ARE</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="slider">
+            <img src="./images/p-images/slide01.jpg" alt="">    <!-- 원래 화살표로 이미지를 넘겨야하지만 지금은 이미지 하나로 생략 -->
+        </article>
+
+        <!-- 메인 컨텐츠 -->
+        <section class="content">
+            <section class="display-section">
+                <div class="container">
+                    <h2 class="sec-tit">WE ARE</h2>
+                    <p class="desc">
+                        Hello we are indigo Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        <br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </section>
+
+            <section class="promotion-section">
+                <div class="container">
+                    <ul class="promo-list">
+                        <li>
+                            <a href="#">
+                                <img src="./images/s-images/promo01.png" alt="">
+                                <h3>HOME</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/s-images/promo02.png" alt="">
+                                <h3>WE ARE</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/s-images/promo03.png" alt="">
+                                <h3>WORK</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/s-images/promo04.png" alt="">
+                                <h3>BLOG</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section class="work-section cfixed">
+                <h2>WORK</h2>
+                <ul class="work-list">
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Running</h3>
+                                <span>Running requires endurance.</span>
+                                <img src="./images/p-images/work01.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Rugby</h3>
+                                <span>Rugby is famous game in USA.</span>
+                                <img src="./images/p-images/work02.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Weight</h3>
+                                <span>It is necessary for all athletes.</span>
+                                <img src="./images/p-images/work03.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Matathon</h3>
+                                <span>Marathon is a team game</span>
+                                <img src="./images/p-images/work04.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Boxing</h3>
+                                <span>Boxing is a skill.</span>
+                                <img src="./images/p-images/work05.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Ice Hockey</h3>
+                                <span>Ice hockey has a cold stadium.</span>
+                                <img src="./images/p-images/work06.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Skate Board</h3>
+                                <span>Skateboarding is important for balance.</span>
+                                <img src="./images/p-images/work07.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Basketball</h3>
+                                <span>Basketball has an intuition.</span>
+                                <img src="./images/p-images/work08.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section class="blog-section">
+                <div class="container">
+                    <h2 class="sec-tit">BLOG</h2>
+                    <ul class="blog-list">
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog01.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15"></time>
+                            <a href="#">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog02.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15"></time>
+                            <a href="#">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog03.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15"></time>
+                            <a href="#">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2 class="sec-tit">CONTACT</h2>
+                <div class="form-box">
+                    <form action="" method="">
+                        <fieldset class="cfixed">
+                            <legend class="blind">CONTACT</legend>
+                            <div class="form">
+                                <label for="name" class="blind ">name</label>
+                                <input type="text" id="name" placeholder="Name">
+                                <label for="phone" class="blind">phone</label>
+                                <input type="text" id="phone" placeholder="Phone">
+                                <label for="email" class="blind">e-mail</label>
+                                <input type="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div class="textarea" >
+                                <label for="message" class="blind">message</label>
+                                <textarea name="message" id="message" placeholder="message"></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="send-btn">
+                            <button>Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+
+        <!-- 하단 영역 -->
+        <footer class="footer">
+            <!-- 지도 -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d815.360519016008!2d129.06912592922595!3d35.170532695044216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb579366af1b%3A0x7a0645cd3e2a5b69!2z67CV7KSA67ew7Yuw656pIOu2gOyCsOyWkeygleygkA!5e0!3m2!1sko!2skr!4v1592198798190!5m2!1sko!2skr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <p class="copyright">Hecho de Luz</p>
+        </footer>
+    </div>
 </body>
 </html>
